@@ -6,7 +6,8 @@ const execute = async () => {
         const data = await getData();
         
         const ingredients = Ingredients.load(data);
-        showIngredients(ingredients)
+        showIngredients(ingredients);
+        const cauldron = new Cauldron (ingredients);
     }
     catch{
         // console.error("Error in reaching DB");
