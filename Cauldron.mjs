@@ -10,7 +10,7 @@ export class Cauldron {
         const ingredient2 = this.ingredients.find(ingredient_name2);
 
         const common_effects = ingredient1.findCommonEffects(ingredient2);
-
+        
         if(common_effects.length === 0)
             return Potion.failed();
 
